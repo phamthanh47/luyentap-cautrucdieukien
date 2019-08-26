@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 50 số đầu phí là 600 đông mỗi phút, 150 phút tiếp theo là 400 đồng mỗi phút, 200 phút trở lên cước là 200 đồng mỗi phút
+        let sophut=parseFloat(prompt("nhap so phut da goi: "));
+           let phi=0;
+        let phicodinh=25000;
+        if(sophut>200)
+            phi=(sophut-200)*200+150*400+50*600;
+        else if(sophut>50)
+            phi=(sophut-50)*400+50*600;
+        else
+            phi=sophut*600;
+       let  tongtien = phi+phicodinh;
+      alert("so phut goi "+sophut+ "tuong ung so tien phai nop la: "+tongtien);
+
+</script>
+</body>
+</html>

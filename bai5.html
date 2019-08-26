@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem1 = parseFloat(prompt("nhap diem bai kiem tra: "));
+    let diem2 = parseFloat(prompt("nhap diem bai kiem tra giau ky: "));
+    let diem3 = parseFloat(prompt("nhap diem bai kiem tra cuoi ky : "));
+    let diemtb = (diem1 + diem2 + diem3) / 3;
+    if (diemtb >= 8.5)
+        alert("diemtrung binh la: " +diemtb+" hoc sinh gioi!");
+    else if (7 <= diemtb < 8.5)
+        alert("diemtrung binh la: " +diemtb+" hoc sinh kha!");
+    else if (5.5 <= diemtb < 7)
+        alert("diemtrung binh la: " +diemtb+" hoc sinh trung binh!");
+    else
+        alert("diemtrung binh la: " +diemtb+" hoc sinh yeu!");
+
+</script>
+</body>
+</html>
